@@ -11,3 +11,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Hide all content by default */
+.content {
+  display: none;
+}
+
+/* Show the content when the corresponding radio button is checked */
+#option1:checked ~ #content1,
+#option2:checked ~ #content2,
+#option3:checked ~ #content3 {
+  display: block;
+}
+
+/* Optional: Style the labels to look like buttons */
+label {
+  cursor: pointer;
+  padding: 8px 12px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+/* Optional: Style the selected label */
+label:checked {
+  background-color: teal;
+  color: white;
+}
